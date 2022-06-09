@@ -6,7 +6,7 @@ import './MyProjects.css'
 
 const MyProjects = () => {
     return (
-        <div className='px-40 pb-40'>
+        <div className='px-40 pb-28'>
             <h1 className='text-base-100 text-5xl uppercase font-semibold pb-8  mb-10'>MY <span className='text-secondary'>Projects</span></h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10'>
                 <div className='mt-10 customShadow p-5'>
