@@ -9,7 +9,7 @@ const Main = () => {
     return (
         <div className='main1'>
 
-            <div className='content'>
+            <div className='content '>
                 <div class="hero  bg-none">
                     <div class=" hero-content flex-col lg:gap-96 lg:flex-row-reverse ">
                         <img style={{ width: '500px' }} src={img} />
