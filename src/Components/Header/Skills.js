@@ -11,9 +11,9 @@ import './Skills.css'
 
 const Skills = () => {
     return (
-        <div className='px-20'>
+        <div className='lg:px-40'>
             <h1 className='text-base-100 text-5xl uppercase font-semibold pb-8 mt-20 mb-10'>Professional <span className='text-secondary'>Skillset</span></h1>
-            <div className='px-20 pb-40 grid grid-cols-2 lg:grid-cols-5  md:grid-cols-3 gap-8 justify-center items-center justify-items-center '>
+            <div className='pb-40 grid grid-cols-1 lg:grid-cols-5  md:grid-cols-3 gap-8 justify-center items-center justify-items-center '>
                 <div className='cards ' >
                     <img style={{ width: '70px' }} src={html} alt="" />
                 </div>
