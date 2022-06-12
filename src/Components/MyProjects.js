@@ -12,7 +12,7 @@ const MyProjects = () => {
 
 
     return (
-        <div className='lg:px-40 px-5 pb-28'>
+        <div className='lg:px-40 px-5 pb-2 mt-20' id='projects'>
             <h1 className='text-base-100 lg:text-5xl text-3xl uppercase font-semibold   mb-3'>MY <span className='text-secondary'>Projects</span></h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10'>
 

@@ -13,7 +13,7 @@ const Skills = () => {
     return (
         <div className='lg:px-40'>
             <h1 className='text-base-100 lg:text-5xl text-3xl uppercase font-semibold pb-14 mt-20 '>Professional <span className='text-secondary'>Skillset</span></h1>
-            <div className='pb-40 grid grid-cols-1 lg:grid-cols-5  md:grid-cols-3 gap-8 justify-center items-center justify-items-center '>
+            <div className='pb-20 grid grid-cols-1 lg:grid-cols-5  md:grid-cols-3 gap-8 justify-center items-center justify-items-center '>
                 <div className='cards ' >
                     <img style={{ width: '70px' }} src={html} alt="" />
                 </div>
