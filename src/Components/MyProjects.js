@@ -1,70 +1,59 @@
 import React from 'react';
-import first from '../Assets/Screenshot_4.png'
-import second from '../Assets/Screenshot_5.png'
-import third from '../Assets/Screenshot_6.png'
+import { useNavigate } from 'react-router-dom';
+import useProjects from './hooks/useProjects';
+import Loading from './Loading/Loading';
 import './MyProjects.css'
 
 const MyProjects = () => {
+    const [projects, loading] = useProjects();
+    const navigate = useNavigate();
+    if (loading) {
+        <Loading></Loading>
+    }
+
+
+
     return (
-        <div className='px-40 pb-28'>
-            <h1 className='text-base-100 text-5xl uppercase font-semibold pb-8  mb-10'>MY <span className='text-secondary'>Projects</span></h1>
+        <div className='lg:px-40 px-5 pb-28'>
+            <h1 className='text-base-100 lg:text-5xl text-3xl uppercase font-semibold   mb-3'>MY <span className='text-secondary'>Projects</span></h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10'>
-                <div className='mt-10 customShadow p-5'>
-                    <h1 className='text-center text-secondary text-3xl font-bold mb-5'>Dream Pictures</h1>
-                    <img className=' mb-5 ' src={first} alt="" />
-                    <p className='text-justify text-base-100 mt-5 mb-3'>
 
-                        This is a wedding photography service providing website. Currently here
-                        some services are added and authentication system implemented. User can login/signup using google authentication also email, password
-                        based authentication system is implemented
+                {
+                    projects.map(project => {
+                        const id = project.id;
+                        return (
+                            <div className='mt-10 customShadow p-5'>
+                                <h1 className='text-center text-secondary text-3xl font-bold mb-5'>{project.name}</h1>
+                                <img className=' mb-5 ' src={project.img} alt="" />
+                                <p className='text-justify text-base-100 mt-5 mb-3 maxLengthSetup'>
 
-
-                    </p>
-                    <div className='grid grid-cols-1 gap-3  justify-center'><a className='px-8 bg-secondary customShadow  font-bold text-white  rounded-md py-2' href="https://dream-pictures.web.app/" target='_blank' rel='noreferrer'>Live Site</a>
-                        <a className='px-8 bg-secondary customShadow  font-bold text-white  rounded-md py-2' href="https://github.com/shahriurahmed/dream-pictures" target='_blank' rel='noreferrer'>Client Site</a>
-
-                        <a className='px-8 bg-secondary customShadow  font-bold text-white  rounded-md py-2' href="/" target='_blank' rel='noreferrer'>N/A</a></div>
-
-                </div>
+                                    {project.des}
 
 
-                <div className='mt-10 customShadow p-5'>
-                    <h1 className='text-center text-3xl font-bold mb-5 text-secondary'>Electro Point</h1>
-                    <img className='mb-5 ' src={second} alt="" />
-                    <p className='text-justify text-base-100 mt-5 mb-3'>
+                                </p>
+                                <div className='flex justify-between items-center'>
+                                    <div>
+                                        <button onClick={() => navigate(`/details/${id}`)} className='bg-primary customShadow  text-red-500 btnstyle  rounded-md '>Details</button>
+                                    </div>
+                                    <div className='flex gap-2  justify-end justify-items-end'>
+                                        <a className=' bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.live} target='_blank' rel='noreferrer'>Live Site</a>
+                                        <a className='bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.client} target='_blank' rel='noreferrer'>Client Site</a>
 
-                        This is an Inventory Management website. This inventory management
-                        system is related to laptop items. Here different suppliers can manage their
-                        products. where users can Login/registration by google authentication/
-                        Email, Password also can add/delete item.
+                                        {project.server ?
+                                            <a className=' bg-primary customShadow  text-secondary btnstyle  rounded-md ' href="/" target='_blank' rel='noreferrer'>Server Site </a>
+                                            :
+                                            <></>
+                                        }
+                                    </div>
+                                </div>
 
-                    </p>
-                    <div className='grid grid-cols-1 gap-3  justify-center'>
 
-                        <a className='px-8 bg-secondary customShadow  font-bold text-white  rounded-md py-2' href="https://electro-point.web.app/" target='_blank' rel='noreferrer'>Live Site</a>
 
-                        <a className='px-8 bg-secondary customShadow  font-bold text-white  rounded-md py-2' href="https://github.com/shahriurahmed/electro-point-client" target='_blank' rel='noreferrer'>Client Site</a>
+                            </div>
+                        )
 
-                        <a className='px-8 bg-secondary customShadow  font-bold text-white  rounded-md py-2' href="https://github.com/shahriurahmed/electro-point-server" target='_blank' rel='noreferrer'>Server Site</a></div>
-
-                </div>
-
-                <div className='mt-10 customShadow p-5'>
-                    <h1 className='text-center text-3xl font-bold mb-5 text-secondary'>BD Tools</h1>
-                    <img className='mb-5 ' src={third} alt="" />
-                    <p className='text-justify text-base-100 mt-5 mb-3'>
-
-                        This is a Manufacturer website where users can Login/registration by google authentication & User name, Email, Password, User & Admin Role separated Dashboard. Add products, manage all orders & Manage all Products & delete products, upgraded by Admin.
-
-                    </p>
-                    <div className='grid grid-cols-1 gap-3  justify-center'>
-
-                        <a className='px-8 bg-secondary customShadow  font-bold text-white  rounded-md py-2' href="https://bd-tools-20f34.firebaseapp.com/" target='_blank' rel='noreferrer'>Live Site</a>
-
-                        <a className='px-8 bg-secondary customShadow  font-bold text-white  rounded-md py-2' href="https://github.com/shahriurahmed/BD-Tools-client-side" target='_blank' rel='noreferrer'>Client Site</a>
-
-                        <a className='px-8 bg-secondary customShadow  font-bold text-white  rounded-md py-2' href="https://github.com/shahriurahmed/BD-Tools_server-side" target='_blank' rel='noreferrer'>Server Site</a></div>
-                </div>
+                    })
+                }
 
             </div>
 

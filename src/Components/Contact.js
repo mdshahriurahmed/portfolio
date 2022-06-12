@@ -10,23 +10,23 @@ const Contact = () => {
         }).catch(err => alert("Failed to sent message"));
     }
     return (
-        <div className='flex justify-center mt-16 pb-40'>
-            <div class="card lg:w-1/2 md:w-1/2 bg-primary customshadow">
+        <div id='contact' className='flex justify-center mt-16 pb-40 '>
+            <div className="card lg:w-1/2 md:w-1/2 bg-primary customshadow1">
 
-                <div class="card-body items-center text-center">
-                    <h1 className=' mb-5 uppercase text-5xl font-semibold text-base-100'>Contact <span className='text-secondary'>Me</span> </h1>
-                    <form onSubmit={sentEmail}>
+                <div className="card-body items-center text-center">
+                    <h1 className=' mb-5 uppercase lg:text-5xl text-3xl font-semibold text-base-100'>Contact <span className='text-secondary'>Me</span> </h1>
+                    <form onSubmit={sentEmail} className='flex flex-col'>
 
-                        <input type="text" name="name" placeholder="Name" class="input input-bordered  w-96 mb-4" required />
-
-
-                        <input type="text" name="email" placeholder="email" class="input input-bordered  w-96 mb-4" required />
+                        <input type="text" name="name" placeholder="Name" className="input input-bordered  w-80 mb-4" required />
 
 
-                        <textarea class="textarea input-bordered w-96 mb-4" name="message" placeholder="Bio" required></textarea>
+                        <input type="text" name="email" placeholder="email" className="input input-bordered  w-80 mb-4" required />
 
 
-                        <button class="btn btn-secondary text-white mt-5 customshadow">Send Message</button>
+                        <textarea className="textarea input-bordered w-80 mb-4" name="message" placeholder="Bio" required></textarea>
+
+
+                        <button className="btn btn-secondary text-white mt-5 customshadow1">Send Message</button>
 
                     </form>
 

@@ -1,3 +1,23 @@
 .customShadow {
     box-shadow: 3px 5px 8px rgb(2, 2, 70);
 }
+
+.btnstyle {
+    font-size: 12px;
+    width: 65px;
+    margin-top: 30px;
+
+}
+
+.maxLengthSetup {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 25px;
+    /* fallback */
+    max-height: 150px;
+    /* fallback */
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}

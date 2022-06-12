@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Dream Pictures",
+        "img": "https://i.ibb.co/thn4BH4/Screenshot-4.png",
+        "live": "https://dream-pictures.web.app/",
+        "client": "https://github.com/shahriurahmed/dream-pictures",
+        "server": "",
+        "des": "This is a wedding photography service providing website. Currently here some services are added and authentication system implemented. User can login/signup using google authentication also email, password based authentication system is implemented. "
+    },
+    {
+        "id": 2,
+        "name": "Electro Point",
+        "img": "https://i.ibb.co/tmg7CzR/Screenshot-5.png",
+        "live": "https://electro-point.web.app/",
+        "client": "https://github.com/shahriurahmed/electro-point-client",
+        "server": "https://github.com/shahriurahmed/electro-point-server",
+        "des": "This is an Inventory Management website. This inventory management system is related to laptop items. Here different suppliers can manage their products. where users can Login/registration by google authentication/ Email, Password also can add/delete item. "
+    },
+    {
+        "id": 3,
+        "name": "BD Tool",
+        "img": "https://i.ibb.co/P1pwM6F/Screenshot-6.png",
+        "live": "https://bd-tools-20f34.firebaseapp.com/",
+        "client": "https://github.com/shahriurahmed/BD-Tools-client-side",
+        "server": "https://github.com/shahriurahmed/BD-Tools_server-side",
+        "des": "This is a Manufacturer website where users can Login/registration by google authentication & User name, Email, Password, User & Admin Role separated Dashboard. Add products, manage all orders & Manage all Products & delete products, upgraded by Admin. "
+    }
+]

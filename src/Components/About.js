@@ -1,17 +1,20 @@
 import React from 'react';
 import Download from './Download';
 import img from '../Assets/My image.jpg'
+import './About.css'
 
 const About = () => {
     return (
         <div className='mt-16'>
             <div className='content'>
-                <div class="hero  bg-none">
-                    <div class=" hero-content flex-col lg:gap-48 lg:flex-row-reverse ">
-                        <img style={{ width: '300px' }} src={img} />
+                <div className="hero  bg-none">
+                    <div className=" hero-content flex-col lg:gap-48 lg:flex-row-reverse ">
+                        <div className='cshadow bg-primary p-2'>
+                            <img style={{ width: '300px' }} src={img} alt='img' />
+                        </div>
                         <div className='lg:flex lg:flex-col '>
 
-                            <h1 class="text-5xl font-bold lg:text-left text-base-100 font-semibold mb-5">LET ME   <span className='text-secondary '>INTRODUCE </span> MYSELF</h1>
+                            <h1 className="lg:text-5xl text-3xl font-bold lg:text-left text-base-100 font-semibold mb-5">LET ME   <span className='text-secondary '>INTRODUCE </span> MYSELF</h1>
                             <hr />
                             <p className='text-base-100 lg:text-left text-xl mt-3 mt-12 mb-12'>I fell in love with programming and I have at least learnt something, I think… <br /><br />
                                 I am fluent in classics like <span className='text-secondary '>Javascript</span>

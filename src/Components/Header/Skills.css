@@ -7,4 +7,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+
+.cards:hover {
+    filter: invert(45%) sepia(80%) saturate(1500%) hue-rotate(95deg) brightness(95%) contrast(106%);
 }
