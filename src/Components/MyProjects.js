@@ -7,9 +7,7 @@ import './MyProjects.css'
 const MyProjects = () => {
     const [projects, loading] = useProjects();
     const navigate = useNavigate();
-    if (loading) {
-        <Loading></Loading>
-    }
+
 
 
 

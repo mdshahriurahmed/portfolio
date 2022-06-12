@@ -4,11 +4,13 @@ const useProjects = () => {
     const [projects, setProjects] = useState([]);
     const [lodaing, setLoading] = useState(true);
     useEffect(() => {
-        fetch('projects.json')
+        fetch('/projects.json')
             .then(res => res.json())
             .then(data => {
+
                 setProjects(data);
                 setLoading(false);
+
             }
             )
     }, []);
