@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Dream Pictures",
+        "img": "https://i.ibb.co/thn4BH4/Screenshot-4.png",
+        "live": "https://dream-pictures.web.app/",
+        "client": "https://github.com/shahriurahmed/dream-pictures",
+        "server": "",
+        "des": "This is a wedding photography service providing website. Currently here some services are added and authentication system implemented. User can login/signup using google authentication also email, password based authentication system is implemented. ",
+        "tech": "HTML, CSS, React Js, React Bootstrap, React Router, Firebase Authentication",
+        "snap1": "https://i.ibb.co/FWd97Hr/screencapture-dream-pictures-web-app-2022-06-13-03-49-25.png",
+        "snap2": "https://i.ibb.co/4pkH5hL/screencapture-dream-pictures-web-app-login-2022-06-13-03-51-37.png"
+    },
+    {
+        "id": 2,
+        "name": "Electro Point",
+        "img": "https://i.ibb.co/tmg7CzR/Screenshot-5.png",
+        "live": "https://electro-point.web.app/",
+        "client": "https://github.com/shahriurahmed/electro-point-client",
+        "server": "https://github.com/shahriurahmed/electro-point-server",
+        "des": "This is an Inventory Management website. This inventory management system is related to laptop items. Here different suppliers can manage their products. where users can Login/registration by google authentication/ Email, Password. We have option to add inventory item, delete inventory item, update quantity of item ",
+        "tech": "Html, CSS, Bootstrap, React js, Node js, Express js, MongoDB, Firebase and we have used icons from heroicon.",
+        "snap1": "https://i.ibb.co/LCTVK53/screencapture-electro-point-web-app-2022-06-13-03-39-35.png",
+        "snap2": "https://i.ibb.co/X4c2KXR/screencapture-electro-point-web-app-add-New-Item-2022-06-13-03-46-43.png"
+    },
+    {
+        "id": 3,
+        "name": "BD Tool",
+        "img": "https://i.ibb.co/P1pwM6F/Screenshot-6.png",
+        "live": "https://bd-tools-20f34.firebaseapp.com/",
+        "client": "https://github.com/shahriurahmed/BD-Tools-client-side",
+        "server": "https://github.com/shahriurahmed/BD-Tools_server-side",
+        "des": "This is a Manufacturer website where users can Login/registration by google authentication & User name, Email, Password, User & Admin Role separated Dashboard. Add products, manage all orders & Manage all Products & delete orders/ products, upgrade and user to admin by Admin. Users can order products, add a review, View My orders and also delete them. Payment system is implemented using stripe. ",
+        "tech": "HTML, CSS, Tailwind CSS, Daisy UI, React js, Node js, Express js, MongoDB, Firebase",
+        "snap2": "https://i.ibb.co/yFDyBh9/screencapture-bd-tools-20f34-firebaseapp-purchase-6290bfbc948dd37aeb0acb44-2022-06-13-04-07-21.png",
+        "snap1": "https://i.ibb.co/NCgNr8p/screencapture-bd-tools-20f34-firebaseapp-2022-06-13-04-02-23.png"
+    }
+]

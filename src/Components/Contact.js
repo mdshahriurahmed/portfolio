@@ -10,7 +10,7 @@ const Contact = () => {
         }).catch(err => alert("Failed to sent message"));
     }
     return (
-        <div id='contact' className='flex justify-center mt-36 pb-40 '>
+        <div id='contact' className='flex justify-center mt-36 pb-60 '>
             <div className="card lg:w-1/2 md:w-1/2 bg-primary customshadow1">
 
                 <div className="card-body items-center text-center">
