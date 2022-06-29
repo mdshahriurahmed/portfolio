@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../Assets/MD SHAHRIUR AHMED-1.jpg'
+import resume from '../../Assets/MD SHAHRIUR AHMED.jpg'
 import Download from '../Download';
 
 const Resume = () => {
