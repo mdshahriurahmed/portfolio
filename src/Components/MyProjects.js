@@ -38,7 +38,7 @@ const MyProjects = () => {
                                         <a className='bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.client} target='_blank' rel='noreferrer'>Client Site</a>
 
                                         {project.server ?
-                                            <a className=' bg-primary customShadow  text-secondary btnstyle  rounded-md ' href="/" target='_blank' rel='noreferrer'>Server Site </a>
+                                            <a className=' bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.server} target='_blank' rel='noreferrer'>Server Site </a>
                                             :
                                             <></>
                                         }
