@@ -22,7 +22,7 @@ function App() {
     }, 1000)
   }, [])
   return (
-    <div className="App">
+    <div className="App bg-primary">
 
       {
         loading ?

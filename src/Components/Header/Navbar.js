@@ -40,7 +40,7 @@ const Navbar = () => {
             <div className='hidden lg:flex'>
                 <a href='https://www.facebook.com/shahriarsvn/' target='_blank' rel='noreferrer'><span className='ml-12'><img className='mb-5' style={{ width: '30px' }} src={fb} alt="" /></span></a>
                 <a href='https://www.linkedin.com/in/shahriur-ahmed/' target='_blank' rel='noreferrer'><span className='ml-12'><img className='mb-5' style={{ width: '30px' }} src={linkedin} alt="" /></span></a>
-                <a href='https://github.com/shahriurahmed' target='_blank' rel='noreferrer'><span className='ml-12'><img className='mb-5' style={{ width: '30px' }} src={github} alt="" /></span></a>
+                <a href='https://github.com/mdshahriurahmed' target='_blank' rel='noreferrer'><span className='ml-12'><img className='mb-5' style={{ width: '30px' }} src={github} alt="" /></span></a>
 
             </div>
 
