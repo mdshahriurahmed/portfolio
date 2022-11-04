@@ -34,5 +34,29 @@
         "tech": "HTML, CSS, Tailwind CSS, Daisy UI, React js, Node js, Express js, MongoDB, Firebase",
         "snap2": "https://i.ibb.co/yFDyBh9/screencapture-bd-tools-20f34-firebaseapp-purchase-6290bfbc948dd37aeb0acb44-2022-06-13-04-07-21.png",
         "snap1": "https://i.ibb.co/NCgNr8p/screencapture-bd-tools-20f34-firebaseapp-2022-06-13-04-02-23.png"
+    },
+    {
+        "id": 4,
+        "name": "Avix Pharmaceuticals",
+        "img": "https://i.ibb.co/ssqGmcb/Screenshot-8-1.png",
+        "live": "https://avixpharma.com/",
+        "client": "",
+        "server": "",
+        "des": "This is a commercial project. As a web developer of Avix Pharmaceuticals Limited I developed the entire website. This website is fully responsive. It has only client side. For few dynamic data we didn't maintained a databse. Such as for the team members, news and events section we have used json file to keep our dynamic data. Here is a pipeline section. Which is also dynamic. ",
+        "tech": "Html, CSS, Bootstrap, React js, react router, react helmet, AOS animation, Email js, Lazy Loading, slick slider, and we have used icons from fontawesome.",
+        "snap2": "https://i.ibb.co/T1LBfL5/screencapture-avixpharma-about-us-2022-11-04-21-04-51-1-1.png",
+        "snap1": "https://i.ibb.co/KK4CWX5/screencapture-avixpharma-pipeline-2022-11-04-21-05-21-1-1.png"
+    },
+    {
+        "id": 3,
+        "name": "Amenar Alo",
+        "img": "https://i.ibb.co/BsPkjcw/Screenshot-8-2.png",
+        "live": "https://amenar-alo.web.app/",
+        "client": "",
+        "server": "",
+        "des": "This is a charity website. here we have focused on child education. It has a nice dashboard with a lot of features. Such as own profile management, manage users, add user, delete user, view user, promote volunteer to moderator, add childrens, remove childrens, add results of childrens. ",
+        "tech": "HTML, CSS, Tailwind CSS, Daisy UI, React js, Node js, Express js, MongoDB, Firebase, react helmet, lazy loading, slick slider, email js, fontawesome",
+        "snap2": "https://i.ibb.co/W5RmYqR/screencapture-amenar-alo-web-app-what-we-do-2022-11-04-21-21-57-1.png",
+        "snap1": "https://i.ibb.co/XsN8R91/Screenshot-9-1.png"
     }
 ]

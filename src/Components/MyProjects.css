@@ -9,6 +9,15 @@
 
 }
 
+.heightset {
+    height: 250px;
+}
+
+.customShadow img {
+    height: 300px;
+    width: 100%;
+}
+
 .maxLengthSetup {
     overflow: hidden;
     text-overflow: ellipsis;

@@ -43,7 +43,10 @@ const Details = () => {
                                                 <p className='text-base-100 text-justify mt-5'><span className='text-secondary'>Technology Used: </span>{project.tech}</p>
                                                 <div className='flex gap-2 align-items mt-5'>
                                                     <a className=' bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.live} target='_blank' rel='noreferrer'>Live Site</a>
-                                                    <a className='bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.client} target='_blank' rel='noreferrer'>Client Site</a>
+                                                    {
+                                                        project.client ?
+                                                            <a className='bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.client} target='_blank' rel='noreferrer'>Client Site</a> : <></>
+                                                    }
 
                                                     {project.server ?
                                                         <a className=' bg-primary customShadow  text-secondary btnstyle  rounded-md ' href="/" target='_blank' rel='noreferrer'>Server Site </a>

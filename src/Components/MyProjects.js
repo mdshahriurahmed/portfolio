@@ -23,7 +23,7 @@ const MyProjects = () => {
                             <div className='mt-10 customShadow p-5'>
                                 <h1 className='text-center text-secondary text-3xl font-bold mb-5'>{project.name}</h1>
                                 <img className=' mb-5 ' src={project.img} alt="" />
-                                <p className='text-justify text-base-100 mt-5 mb-3 maxLengthSetup'>
+                                <p className='text-justify text-base-100 mt-5 mb-3 maxLengthSetup heightset'>
 
                                     {project.des}
 
@@ -35,7 +35,9 @@ const MyProjects = () => {
                                     </div>
                                     <div className='flex gap-2  justify-end justify-items-end'>
                                         <a className=' bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.live} target='_blank' rel='noreferrer'>Live Site</a>
-                                        <a className='bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.client} target='_blank' rel='noreferrer'>Client Site</a>
+                                        {
+                                            project.client ? <a className='bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.client} target='_blank' rel='noreferrer'>Client Site</a> : <></>
+                                        }
 
                                         {project.server ?
                                             <a className=' bg-primary customShadow  text-secondary btnstyle  rounded-md ' href={project.server} target='_blank' rel='noreferrer'>Server Site </a>
